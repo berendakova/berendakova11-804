@@ -3,7 +3,7 @@ public class Calc{
 	public static void main(String[] args) {
 		System.out.println("Enter operation: * ; / ; + ; - ; ^ ");
 		Scanner ch = new Scanner(System.in);
-		char operation = ch.nextChar();
+		char operation = ch.next().charAt(0);
 		if ((operation == '*') || ( operation == '/') || (operation == '^') || ( operation == '+') || (operation == '-')) {
 			System.out.println("Enter two numbers");
 			Scanner in = new Scanner(System.in);
@@ -11,8 +11,9 @@ public class Calc{
 			double num2 = in.nextInt();
 			double result = 1;
 		}
-		else 
+		else{ 
 			System.out.println("Error. Uncorrect operation");
+		}
 		if (operation = '*'){
 			 result = num1 * num2;
 		}
